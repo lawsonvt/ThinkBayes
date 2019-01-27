@@ -4,8 +4,9 @@ to solve Exercise 2-1 in the Think Bayes book"""
 class Bowl(object):
     """A bowl object that keeps track of our cookies"""
 
-    def __init__(self, v_cookies, c_cookies):
+    def __init__(self, bowl_name, v_cookies, c_cookies):
         """Constructor"""
+        self.bowl_name = bowl_name
         self.v_cookies = float(v_cookies)
         self.c_cookies = float(c_cookies)
         self.ratio()
